@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class='active' href='#home'>Form</a>
+        <a href='#news'>Stats</a>
+        <a href='#contact'>Surveys</a>
+        <a href='#about'>About</a>
+      </div>
+      
+      <h1 id='title'>Pizza Flavour Survey</h1>
+      <p id="description">Let's Settle which Pizza is the Best once and for all!</p>
+      
+      <div id='content'>
+        <form id='survey-form'action='#'>
+          <label id='name-label' for='name'>Name</label> 
+           <input id='name' type='text' name='name' required placeholder='John Smith'>
+          
+          <label id='email-label' for='email'>Email</label>
+            <input id='email' type='email' name='name' required placeholder='john@smith.com'>      
+          
+          <label id='number-label' for='number'>Age (Optional)</label> 
+            <input id='number' type='number' name='name' min='0' max='99' placeholder='18'>
+          
+          <h2 id='choice'>Please Choose Your Pizza</h2>
+          
+          <div id='radio-tops'>
+              <fieldset id='group1'>
+                <input type='radio' value='value1' name='group1'> Margherita
+                <input type='radio' value='value1' name='group1'> Four-Cheeses
+                <input type='radio' value='value1' name='group1'> Marinara
+                <input type='radio' value='value1' name='group1'> Napoletana
+                <input type='radio' value='value1' name='group1'> Pepperoni
+              </fieldset>
+          </div>
+        
+          <div id='selects'>
+            <label for="buds">Choose a Bud</label>
+    
+            <select name="buds" id="dropdown">
+              <option value="choice">Choose!</option>
+              <option value="savory">Savory!</option>
+              <option value="sweety">Sweet!</option>
+              <option value="spicy">Spicy!</option>
+            </select>
+          </div>
+        
+          <div id='checkboxes'>
+              <fieldset id='group2'>
+                <input type='checkbox' value='fork-and-knife' name='group1'> Fork & Knife
+                <input type='checkbox' value='handheld' name='group1'> Handheld
+                <input type='checkbox' value='with-condiments' name='group1'> With Condiments
+              </fieldset>
+          </div>
+       
+          <div id='textarea'>
+            <label id='text-label'for="story">Comments</label>
+    
+            <textarea id="story" name="story" rows="5" cols="80">Please add suggestions!
+            </textarea>
+          </div>
+        
+          <input id='submit' type='submit'>
+        
+        </form>
+      </div>
+    
+      
+</body>
+      
+</html>
+
